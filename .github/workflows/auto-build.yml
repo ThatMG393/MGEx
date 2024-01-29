@@ -33,10 +33,8 @@ jobs:
       - name: Build libMGEx
         run: |
           mkdir b && cd b
-          cmake .. -DCMAKE_BUILD_TYPE=Release \ 
-          -DCMAKE_SYSTEM_NAME=Android \
-          -DCMAKE_SYSTEM_VERSION=25 \
-          -DCMAKE_ANDROID_ARCH_ABI=${{matrix.target_arch}}
+          cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_SYSTEM_NAME=Android -DCMAKE_SYSTEM_VERSION=25 -DCMAKE_ANDROID_ARCH_ABI=${{matrix.target_arch}}
+          make -j$(nproc)
 
       - name: Upload libMGEx.so
         uses: actions/upload-artifact@v3
