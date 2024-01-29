@@ -1,0 +1,48 @@
+name: Auto Build
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        target_arch: [
+            arm64-v8a,
+            armeabi-v7a
+        ]
+
+      fail-fast: false
+    steps:
+      - name: Checkout
+        uses: action/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup NDK
+        uses: nttld/setup-ndk@v1
+        with:
+          ndk-version: r25c
+          add-to-path: true
+          local-cache: true
+
+      - name: Build libMGEx
+        run: |
+          mkdir b && cd b
+          cmake .. -D=Release \ 
+          -DCMAKE_SYSTEM_NAME=Android \
+          -DCMAKE_SYSTEM_VERSION=25 \
+          -DCMAKE_ANDROID_ARCH_ABI=${{matrix.target_arch}}
+
+      - name: Upload libMGEx.so
+        uses: actions/upload-artifact@v3
+        with:
+          name: libMGEx-lib
+          path: libMGEx.so
+
+
+
