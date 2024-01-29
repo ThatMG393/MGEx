@@ -1,2 +1,0 @@
-/data/data/com.termux/files/usr/bin/llvm-ar qc libRobloxLib.TaskScheduler.a CMakeFiles/RobloxLib.TaskScheduler.dir/TaskScheduler/src/taskscheduler.cpp.o
-/data/data/com.termux/files/usr/bin/llvm-ranlib libRobloxLib.TaskScheduler.a

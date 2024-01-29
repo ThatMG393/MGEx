@@ -1,2 +1,0 @@
-/data/data/com.termux/files/usr/bin/llvm-ar qc libRobloxLib.Hooks.a CMakeFiles/RobloxLib.Hooks.dir/Hooks/src/hooks.cpp.o
-/data/data/com.termux/files/usr/bin/llvm-ranlib libRobloxLib.Hooks.a
