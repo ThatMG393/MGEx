@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-if ("${TARGET_ARCH}" == "armeabi-v7a")
+if ("${TARGET_ARCH}" STREQUAL "armeabi-v7a")
 	message("Arm!")
 else()
 	message("No Arm! :(")
