@@ -29,6 +29,8 @@ jobs:
           sdk-version: 25
           cmake-version: 3.28.1
           ndk-version: 25.1.8937393
+        env:
+          ACTIONS_STEP_DEBUG: true
           
       - name: Build libMGEx
         run: |
