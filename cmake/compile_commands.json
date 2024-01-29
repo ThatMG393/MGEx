@@ -1,0 +1,326 @@
+[
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake",
+  "command": "/data/data/com.termux/files/usr/bin/c++ -DMGEx_EXPORTS -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/utils/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/utils/Dobby -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/roblox/Addresses/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/roblox/Hooks/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/roblox/TaskScheduler/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/executor/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/executor/Execution/include -O2 -g -DNDEBUG -fPIC -o CMakeFiles/MGEx.dir/main.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/main.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/main.cpp",
+  "output": "CMakeFiles/MGEx.dir/main.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -o CMakeFiles/Luau.Ast.dir/Ast/src/Ast.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/src/Ast.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/src/Ast.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.Ast.dir/Ast/src/Ast.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -o CMakeFiles/Luau.Ast.dir/Ast/src/Confusables.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/src/Confusables.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/src/Confusables.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.Ast.dir/Ast/src/Confusables.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -o CMakeFiles/Luau.Ast.dir/Ast/src/Lexer.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/src/Lexer.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/src/Lexer.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.Ast.dir/Ast/src/Lexer.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -o CMakeFiles/Luau.Ast.dir/Ast/src/Location.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/src/Location.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/src/Location.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.Ast.dir/Ast/src/Location.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -o CMakeFiles/Luau.Ast.dir/Ast/src/Parser.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/src/Parser.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/src/Parser.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.Ast.dir/Ast/src/Parser.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -o CMakeFiles/Luau.Ast.dir/Ast/src/StringUtils.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/src/StringUtils.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/src/StringUtils.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.Ast.dir/Ast/src/StringUtils.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -o CMakeFiles/Luau.Ast.dir/Ast/src/TimeTrace.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/src/TimeTrace.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/src/TimeTrace.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.Ast.dir/Ast/src/TimeTrace.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -o CMakeFiles/Luau.Compiler.dir/Compiler/src/BytecodeBuilder.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/src/BytecodeBuilder.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/src/BytecodeBuilder.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.Compiler.dir/Compiler/src/BytecodeBuilder.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -o CMakeFiles/Luau.Compiler.dir/Compiler/src/Compiler.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/src/Compiler.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/src/Compiler.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.Compiler.dir/Compiler/src/Compiler.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -o CMakeFiles/Luau.Compiler.dir/Compiler/src/Builtins.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/src/Builtins.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/src/Builtins.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.Compiler.dir/Compiler/src/Builtins.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -o CMakeFiles/Luau.Compiler.dir/Compiler/src/BuiltinFolding.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/src/BuiltinFolding.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/src/BuiltinFolding.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.Compiler.dir/Compiler/src/BuiltinFolding.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -o CMakeFiles/Luau.Compiler.dir/Compiler/src/ConstantFolding.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/src/ConstantFolding.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/src/ConstantFolding.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.Compiler.dir/Compiler/src/ConstantFolding.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -o CMakeFiles/Luau.Compiler.dir/Compiler/src/CostModel.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/src/CostModel.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/src/CostModel.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.Compiler.dir/Compiler/src/CostModel.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -o CMakeFiles/Luau.Compiler.dir/Compiler/src/TableShape.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/src/TableShape.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/src/TableShape.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.Compiler.dir/Compiler/src/TableShape.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -o CMakeFiles/Luau.Compiler.dir/Compiler/src/Types.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/src/Types.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/src/Types.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.Compiler.dir/Compiler/src/Types.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -o CMakeFiles/Luau.Compiler.dir/Compiler/src/ValueTracking.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/src/ValueTracking.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/src/ValueTracking.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.Compiler.dir/Compiler/src/ValueTracking.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -o CMakeFiles/Luau.Compiler.dir/Compiler/src/lcode.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/src/lcode.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/src/lcode.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.Compiler.dir/Compiler/src/lcode.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/lapi.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lapi.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lapi.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/lapi.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/laux.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/laux.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/laux.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/laux.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/lbaselib.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lbaselib.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lbaselib.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/lbaselib.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/lbitlib.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lbitlib.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lbitlib.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/lbitlib.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/lbuffer.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lbuffer.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lbuffer.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/lbuffer.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/lbuflib.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lbuflib.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lbuflib.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/lbuflib.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/lbuiltins.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lbuiltins.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lbuiltins.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/lbuiltins.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/lcorolib.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lcorolib.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lcorolib.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/lcorolib.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/ldblib.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/ldblib.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/ldblib.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/ldblib.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/ldebug.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/ldebug.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/ldebug.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/ldebug.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/ldo.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/ldo.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/ldo.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/ldo.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/lfunc.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lfunc.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lfunc.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/lfunc.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/lgc.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lgc.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lgc.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/lgc.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/lgcdebug.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lgcdebug.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lgcdebug.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/lgcdebug.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/linit.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/linit.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/linit.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/linit.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/lmathlib.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lmathlib.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lmathlib.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/lmathlib.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/lmem.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lmem.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lmem.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/lmem.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/lnumprint.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lnumprint.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lnumprint.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/lnumprint.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/lobject.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lobject.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lobject.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/lobject.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/loslib.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/loslib.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/loslib.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/loslib.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/lperf.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lperf.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lperf.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/lperf.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/lstate.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lstate.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lstate.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/lstate.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/lstring.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lstring.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lstring.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/lstring.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/lstrlib.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lstrlib.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lstrlib.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/lstrlib.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/ltable.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/ltable.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/ltable.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/ltable.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/ltablib.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/ltablib.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/ltablib.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/ltablib.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/ltm.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/ltm.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/ltm.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/ltm.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/ludata.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/ludata.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/ludata.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/ludata.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/lutf8lib.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lutf8lib.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lutf8lib.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/lutf8lib.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/lvmexecute.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lvmexecute.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lvmexecute.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/lvmexecute.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/lvmload.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lvmload.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lvmload.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/lvmload.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/deps/luau",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -O2 -g -DNDEBUG -fPIC -Wall -Wsign-compare -Wno-unused -fno-math-errno -o CMakeFiles/Luau.VM.dir/VM/src/lvmutils.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lvmutils.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src/lvmutils.cpp",
+  "output": "deps/luau/CMakeFiles/Luau.VM.dir/VM/src/lvmutils.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/roblox",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/roblox/Addresses/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/utils/include -O2 -g -DNDEBUG -fPIC -o CMakeFiles/RobloxLib.Addresses.dir/Addresses/src/addresses.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/roblox/Addresses/src/addresses.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/roblox/Addresses/src/addresses.cpp",
+  "output": "roblox/CMakeFiles/RobloxLib.Addresses.dir/Addresses/src/addresses.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/roblox",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/roblox/TaskScheduler/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/roblox/Addresses/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/utils/include -O2 -g -DNDEBUG -fPIC -o CMakeFiles/RobloxLib.TaskScheduler.dir/TaskScheduler/src/taskscheduler.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/roblox/TaskScheduler/src/taskscheduler.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/roblox/TaskScheduler/src/taskscheduler.cpp",
+  "output": "roblox/CMakeFiles/RobloxLib.TaskScheduler.dir/TaskScheduler/src/taskscheduler.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/roblox",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/roblox/Hooks/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/roblox/TaskScheduler/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/roblox/Addresses/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/utils/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/executor/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/executor/Execution/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/utils/Dobby -O2 -g -DNDEBUG -fPIC -o CMakeFiles/RobloxLib.Hooks.dir/Hooks/src/hooks.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/roblox/Hooks/src/hooks.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/roblox/Hooks/src/hooks.cpp",
+  "output": "roblox/CMakeFiles/RobloxLib.Hooks.dir/Hooks/src/hooks.cpp.o"
+},
+{
+  "directory": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/cmake/executor",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/executor/Execution/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/executor/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Compiler/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Ast/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/Common/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/src -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/deps/luau/VM/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/utils/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/roblox/Addresses/include -I/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/roblox/TaskScheduler/include -O2 -g -DNDEBUG -fPIC -o CMakeFiles/ExecutorLib.Execution.dir/Execution/src/execution.cpp.o -c /data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/executor/Execution/src/execution.cpp",
+  "file": "/data/data/com.termux/files/home/projects/cpp/robloxexecutor/MGex/executor/Execution/src/execution.cpp",
+  "output": "executor/CMakeFiles/ExecutorLib.Execution.dir/Execution/src/execution.cpp.o"
+}
+]

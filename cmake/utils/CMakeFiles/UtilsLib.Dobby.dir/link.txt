@@ -1,0 +1,2 @@
+/data/data/com.termux/files/usr/bin/llvm-ar qc libUtilsLib.Dobby.a 
+/data/data/com.termux/files/usr/bin/llvm-ranlib libUtilsLib.Dobby.a

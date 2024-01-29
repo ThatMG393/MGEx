@@ -1,4 +1,4 @@
-#include "hooks.h"
+#include <hooks.h>
 #include <cstdint>
 #include <jni.h>
 #include <unordered_set>
@@ -80,8 +80,8 @@ static void RobloxContextSystem_CapabilityErr_hk(int a1, int a2, const char* a3,
 static int RobloxContextSystem_CheckCapabilities_hk(int64_t a1, int a2) {
 	const auto orig = *reinterpret_cast<decltype(RobloxContextSystem_CheckCapabilities_hk)*>(RobloxContextSystem_CheckCapabilities_og);
 
-	int inst = a1; // lowdworrd
-	auto required_cpbs = *reinterpret_cast<std::uint8_t*>(inst + 37);
+	int inst = a1;
+	auto required_cpbs = *reinterpret_cast<uint8_t*>(inst + 37);
 
 	LOGD(" [RobloxContextSystem_CheckCapabilities_hook]: Required capabilities -> 0x%X", required_cpbs);
 

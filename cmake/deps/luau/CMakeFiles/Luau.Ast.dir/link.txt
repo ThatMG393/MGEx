@@ -1,0 +1,2 @@
+/data/data/com.termux/files/usr/bin/llvm-ar qc libLuau.Ast.a CMakeFiles/Luau.Ast.dir/Ast/src/Ast.cpp.o CMakeFiles/Luau.Ast.dir/Ast/src/Confusables.cpp.o CMakeFiles/Luau.Ast.dir/Ast/src/Lexer.cpp.o CMakeFiles/Luau.Ast.dir/Ast/src/Location.cpp.o CMakeFiles/Luau.Ast.dir/Ast/src/Parser.cpp.o CMakeFiles/Luau.Ast.dir/Ast/src/StringUtils.cpp.o CMakeFiles/Luau.Ast.dir/Ast/src/TimeTrace.cpp.o
+/data/data/com.termux/files/usr/bin/llvm-ranlib libLuau.Ast.a

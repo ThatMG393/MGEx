@@ -1,6 +1,4 @@
-#pragma once
-
-#include "addresses.h"
+#include <addresses.h>
 #include <cinttypes>
 #include <csignal>
 #include <jni.h>

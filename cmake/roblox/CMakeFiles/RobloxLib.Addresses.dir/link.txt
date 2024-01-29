@@ -1,0 +1,2 @@
+/data/data/com.termux/files/usr/bin/llvm-ar qc libRobloxLib.Addresses.a CMakeFiles/RobloxLib.Addresses.dir/Addresses/src/addresses.cpp.o
+/data/data/com.termux/files/usr/bin/llvm-ranlib libRobloxLib.Addresses.a
