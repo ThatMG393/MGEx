@@ -33,8 +33,8 @@ jobs:
         uses: amyu/setup-android@v4
         with:
           sdk-version: 34
-          cmake-version: 3.28.1
-          ndk-version: 25.1.8937393
+          cmake-version: 3.22.1
+          ndk-version: 26.1.10909125
         env:
           ACTIONS_STEP_DEBUG: true
           
