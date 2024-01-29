@@ -1,10 +1,25 @@
 cmake_minimum_required(VERSION 3.10)
 
+set(CMAKE_C_COMPILER "clang")
+set(CMAKE_CXX_COMPILER "clang++")
+
+set(CMAKE_SYSTEM_NAME Android)
+set(CMAKE_SYSTEM_VERSION 30)
+
 if ("${TARGET_ARCH}" STREQUAL "armeabi-v7a")
 	message("Arm!")
+	set(ANDROID_ARCH armv7a)  # or armv8a
+	set(ANDROID_ABI ${ANDROID_ARCH}-linux-androideabi)
 else()
 	message("No Arm! :(")
+	set(ANDROID_ARCH arm64)  # or armv8a
+	set(ANDROID_ABI ${ANDROID_ARCH}-linux-androideabi)
 endif()
+
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -target ${ANDROID_ABI} -march=${ANDROID_ARCH} -mfloat-abi=softfp -mfpu=vfpv3-d16")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -target ${ANDROID_ABI} -march=${ANDROID_ARCH} -mfloat-abi=softfp -mfpu=vfpv3-d16")
+
+set(ANDROID_PLATFORM android-30)
 
 project("MGex")
 
