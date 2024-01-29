@@ -1,4 +1,11 @@
 cmake_minimum_required(VERSION 3.10)
+
+if (TARGET_ARCH == "armeabi-v7a")
+	message("Arm!")
+else()
+	message("No Arm! :(")
+endif()
+
 project("MGex")
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
