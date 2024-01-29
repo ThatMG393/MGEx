@@ -29,11 +29,7 @@ set_target_properties(Luau.Common PROPERTIES POSITION_INDEPENDENT_CODE ON)
 set_target_properties(Luau.Compiler PROPERTIES POSITION_INDEPENDENT_CODE ON)
 set_target_properties(Luau.Ast PROPERTIES POSITION_INDEPENDENT_CODE ON)
 
-find_package(JNI REQUIRED)    
-include_directories(${JNI_INCLUDE_DIRS})
-
-target_link_libraries(
-	MGEx
+target_link_libraries(MGEx
 	UtilsLib
 	UtilsLib.Dobby
 	RobloxLib.Addresses

@@ -13,6 +13,3 @@ target_include_directories(UtilsLib PUBLIC include/)
 
 target_include_directories(UtilsLib.Dobby PUBLIC Dobby/)
 target_sources(UtilsLib.Dobby PRIVATE Dobby/dobby.h)
-
-find_package(JNI REQUIRED)    
-include_directories(${JNI_INCLUDE_DIRS})
