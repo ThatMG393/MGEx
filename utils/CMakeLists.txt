@@ -12,3 +12,4 @@ target_include_directories(UtilsLib PUBLIC include/)
 # target_link_libraries(UtilsLib PUBLIC)
 
 target_include_directories(UtilsLib.Dobby PUBLIC Dobby/)
+link_directories(Dobby/)

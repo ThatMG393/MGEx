@@ -27,13 +27,13 @@ find_package(JNI REQUIRED)
 find_library(log-lib log)
 
 target_link_libraries(MGEx
-	UtilsLib
-	UtilsLib.Dobby
 	RobloxLib.Addresses
 	RobloxLib.Hooks
 	RobloxLib.TaskScheduler
 	ExecutorLib
 	ExecutorLib.Execution
+	UtilsLib
+	UtilsLib.Dobby
 	Luau.VM
 	Luau.VM.Internals
 	Luau.Common
