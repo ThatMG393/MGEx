@@ -39,6 +39,7 @@ jobs:
           if [ "${{matrix.target_arch}}" -e "arm64-v8a" ]; then
             sudo apt install libc6-arm64-cross libc6-dev-arm64-cross binutils-arm64-linux-gnueabi libncurses5-dev build-essential bison flex libssl-dev bc -y
           end
+        shell: bash
 
       - name: Build libMGEx
         run: |
