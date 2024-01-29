@@ -1,8 +1,4 @@
 cmake_minimum_required(VERSION 3.10)
-
-set(CMAKE_C_COMPILER_WORKS 1)
-set(CMAKE_CXX_COMPILER_WORKS 1)
-
 project("MGex")
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
