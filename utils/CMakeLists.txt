@@ -12,4 +12,4 @@ target_include_directories(UtilsLib PUBLIC include/)
 # target_link_libraries(UtilsLib PUBLIC)
 
 target_include_directories(UtilsLib.Dobby PUBLIC Dobby/)
-target_sources(UtilsLib.Dobby PRIVATE Dobby/dobby.h)
+target_sources(UtilsLib.Dobby PUBLIC Dobby/dobby.h)
