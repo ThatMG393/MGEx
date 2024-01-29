@@ -2,7 +2,7 @@
 
 #include <cstdint>
 #include <iomanip>
-#include "jni.h"
+#include <jni.h>
 #include <obfuscate.h>
 #include <sstream>
 #include <thread>

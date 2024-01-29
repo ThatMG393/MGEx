@@ -1,7 +1,7 @@
 #include <addresses.h>
 #include <cinttypes>
 #include <csignal>
-#include "jni.h"
+#include <jni.h>
 #include <utils.h>
 #include <executor.h>
 #include <hooks.h>
