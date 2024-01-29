@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
+
 project("MGex")
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
@@ -22,6 +23,9 @@ set_target_properties(Luau.Common PROPERTIES POSITION_INDEPENDENT_CODE ON)
 set_target_properties(Luau.Compiler PROPERTIES POSITION_INDEPENDENT_CODE ON)
 set_target_properties(Luau.Ast PROPERTIES POSITION_INDEPENDENT_CODE ON)
 
+find_package(JNI REQUIRED)
+find_library(log-lib log)
+
 target_link_libraries(MGEx
 	UtilsLib
 	UtilsLib.Dobby
@@ -35,4 +39,5 @@ target_link_libraries(MGEx
 	Luau.Common
 	Luau.Compiler
 	Luau.Ast
+	${log-lib}
 )
