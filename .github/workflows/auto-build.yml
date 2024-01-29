@@ -33,7 +33,7 @@ jobs:
       - name: Build libMGEx
         run: |
           mkdir b && cd b
-          cmake .. -D=Release \ 
+          cmake .. -DCMAKE_BUILD_TYPE=Release \ 
           -DCMAKE_SYSTEM_NAME=Android \
           -DCMAKE_SYSTEM_VERSION=25 \
           -DCMAKE_ANDROID_ARCH_ABI=${{matrix.target_arch}}
