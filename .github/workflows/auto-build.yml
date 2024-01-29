@@ -23,13 +23,13 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Setup NDK
-        uses: nttld/setup-ndk@v1
+      - name: Setup Android SDK & NDK
+        uses: amyu/setup-android@v4
         with:
-          ndk-version: r25c
-          add-to-path: true
-          local-cache: true
-
+          sdk-version: 25
+          cmake-version: 3.28.1
+          ndk-version: 25.1.8937393
+          
       - name: Build libMGEx
         run: |
           mkdir b && cd b
