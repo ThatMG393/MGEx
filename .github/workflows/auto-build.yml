@@ -29,16 +29,17 @@ jobs:
           distribution: adopt
           java-version: 17
 
-      - name: Setup Cross-Compile Toolchains
-        run: |
-          chmod +x ./.github/workflows/scripts/setup-toolchains.sh
-          bash ./.github/workflows/scripts/setup-toolchains.sh
-        shell: bash
-
-      - name: Build libMGEx
+      - name: Setup Android SDK & NDK
+        uses: amyu/setup-android@v4
+        with:
+          sdk-version: 34
+          cmake-version: 3.22.1
+          ndk-version: 26.1.10909125
+      
+      - name: Build MGEx
         run: |
           mkdir b && cd b
-          cmake .. -DCMAKE_BUILD_TYPE=Release -DTARGET_ARCH="${{matrix.target_arch}}"
+          cmake .. -DCMAKE_BUILD_TYPE=Release -DANDROID_ABI=${{matrix.target_arch}} -DANDROID_PLATFORM=android-30 -DANDROID_STL=gnustl_static -DCMAKE_TOOLCHAIN_FILE="$ANDROID_SDK_ROOT/ndk/build/cmake/android.toolchain.cmake"
           make -j$(nproc)
 
       - name: Upload libMGEx.so
