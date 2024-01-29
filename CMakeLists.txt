@@ -1,5 +1,4 @@
 cmake_minimum_required(VERSION 3.10)
-include(AndroidToolchain.cmake)
 project("MGex")
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
