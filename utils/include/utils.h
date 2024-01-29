@@ -2,13 +2,13 @@
 
 #include <cstdint>
 #include <iomanip>
-#include <jni.h>
-#include "obfuscate.h"
+#include "jni.h"
+#include <obfuscate.h>
 #include <sstream>
 #include <thread>
 #include <unwind.h>
 #include <dlfcn.h>
-#include "log.h"
+#include <log.h>
 
 typedef uintptr_t DWORD;
 
