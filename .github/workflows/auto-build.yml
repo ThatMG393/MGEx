@@ -39,10 +39,10 @@ jobs:
       - name: Build MGEx
         run: |
           mkdir b && cd b
-          ls $ANDROID_SDK_ROOT
-          ls $ANDROID_SDK_ROOT/ndk
+          export NDK_HOME=$ANDROID_SDK_ROOT/ndk/26.1.10909125
+          ls $NDK_HOME
           
-          cmake .. -DCMAKE_BUILD_TYPE=Release -DANDROID_ABI=${{matrix.target_arch}} -DANDROID_PLATFORM=android-30 -DANDROID_STL=gnustl_static -DCMAKE_TOOLCHAIN_FILE="$ANDROID_SDK_ROOT/ndk/build/cmake/android.toolchain.cmake"
+          cmake .. -DCMAKE_BUILD_TYPE=Release -DANDROID_ABI=${{matrix.target_arch}} -DANDROID_PLATFORM=android-30 -DANDROID_STL=gnustl_static -DCMAKE_TOOLCHAIN_FILE="$NDK_HOME/build/cmake/android.toolchain.cmake"
           make -j$(nproc)
 
       - name: Upload libMGEx.so
