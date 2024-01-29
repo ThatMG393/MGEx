@@ -34,14 +34,16 @@ jobs:
           sudo apt update
           if [ "${{matrix.target_arch}}" -e "armeabi-v7a" ]; then
             sudo apt install libc6-armhf-cross libc6-dev-armhf-cross binutils-arm-linux-gnueabi libncurses5-dev build-essential bison flex libssl-dev bc -y
-          else
+          end
+
+          if [ "${{matrix.target_arch}}" -e "arm64-v8a" ]; then
             sudo apt install libc6-arm64-cross libc6-dev-arm64-cross binutils-arm64-linux-gnueabi libncurses5-dev build-essential bison flex libssl-dev bc -y
           end
 
       - name: Build libMGEx
         run: |
           mkdir b && cd b
-          cmake .. -DCMAKE_BUILD_TYPE=Release -DTARGET_ARCH=${{matrix.target_arch}}
+          cmake .. -DCMAKE_BUILD_TYPE=Release -DTARGET_ARCH="${{matrix.target_arch}}"
           make -j$(nproc)
 
       - name: Upload libMGEx.so
