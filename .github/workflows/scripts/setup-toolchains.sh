@@ -1,8 +1,9 @@
 echo "Updating..."
 sudo apt update
 
+
 echo "Install essentials..."
-sudo apt install bison flex libssl-dev bc build-essential libncurses5-dev -y
+sudo apt install bison flex libssl-dev bc build-essential libncurses5-dev g++-multilib clang -y
 
 if [ "$1" -e "armeabi-v7a" ]; then
 	echo "Installing 'armeabi-v7a' toolchain.."
