@@ -39,6 +39,9 @@ jobs:
       - name: Build MGEx
         run: |
           mkdir b && cd b
+          ls $ANDROID_SDK_ROOT
+          ls $ANDROID_SDK_ROOT/ndk-bundle
+          
           cmake .. -DCMAKE_BUILD_TYPE=Release -DANDROID_ABI=${{matrix.target_arch}} -DANDROID_PLATFORM=android-30 -DANDROID_STL=gnustl_static -DCMAKE_TOOLCHAIN_FILE="$ANDROID_SDK_ROOT/ndk-bundle/build/cmake/android.toolchain.cmake"
           make -j$(nproc)
 
