@@ -22,7 +22,7 @@ file(GLOB ADDR_SRC "Addresses/include/*.h" "Addresses/src/*.cpp")
 target_sources(RobloxLib.Addresses PRIVATE ${ADDR_SRC})
 
 target_include_directories(RobloxLib.Hooks PUBLIC Hooks/include)
-target_link_libraries(RobloxLib.Hooks PUBLIC UtilsLib.Dobby RobloxLib.Addresses ExecutorLib.Execution) 
+target_link_libraries(RobloxLib.Hooks PUBLIC UtilsLib.Dobby RobloxLib.Addresses ExecutorLib.Execution ExecutorLib Luau.Compiler Luau.VM Luau.VM.Internals RobloxLib.TaskScheduler) 
 file(GLOB HOOKS_SRC "Hooks/include/*.h" "Hooks/src/*.cpp")
 target_sources(RobloxLib.Hooks PRIVATE ${HOOKS_SRC})
 
