@@ -48,7 +48,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: libMGEx-lib
-          path: libMGEx.so
+          path: b/libMGEx.so
 
 
 
