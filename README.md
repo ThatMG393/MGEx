@@ -8,9 +8,9 @@ Modification of [rscwn/MobileBloxV2](https://github.com/ironleon888/MobileBloxV2
 # Building
 
 ## Requires:
-- CMake
-- Clang (or any c/cpp compiler)
-- NDK (optional)
+- CMake (required)
+- Clang (or any c/cpp compiler, required)
+- NDK (required)
 
 ## Steps:
 - Clone the repository
