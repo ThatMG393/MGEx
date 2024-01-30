@@ -15,12 +15,12 @@ file(GLOB ADDR_SRC "Addresses/include/*.h" "Addresses/src/*.cpp")
 target_sources(RobloxLib.Addresses PRIVATE ${ADDR_SRC})
 
 target_include_directories(RobloxLib.Hooks PUBLIC Hooks/include)
-target_link_libraries(RobloxLib.Hooks PUBLIC UtilsLib.Dobby RobloxLib.Addresses ExecutorLib ExecutorLib.Execution Luau.Compiler RobloxLib.TaskScheduler)
+target_link_libraries(RobloxLib.Hooks PUBLIC UtilsLib.Dobby RobloxLib.Addresses ExecutorLib.Execution) 
 file(GLOB HOOKS_SRC "Hooks/include/*.h" "Hooks/src/*.cpp")
 target_sources(RobloxLib.Hooks PRIVATE ${HOOKS_SRC})
 
 target_include_directories(RobloxLib.TaskScheduler PUBLIC TaskScheduler/include)
-target_link_libraries(RobloxLib.TaskScheduler PUBLIC Luau.VM RobloxLib.Addresses)
+target_link_libraries(RobloxLib.TaskScheduler PUBLIC Luau.VM RobloxLib.Addresses UtilsLib)
 file(GLOB TS_SRC "TaskScheduler/include/*.h" "TaskScheduler/src/*.cpp")
 target_sources(RobloxLib.TaskScheduler PRIVATE ${TS_SRC})
 

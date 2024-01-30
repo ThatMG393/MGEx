@@ -1,6 +1,6 @@
 file(GLOB EXECUTOR_SRCS "include/*.h")
 
-add_library(ExecutorLib ${EXECUTOR_SRCS})
+add_library(ExecutorLib SHARED ${EXECUTOR_SRCS})
 add_library(ExecutorLib.Execution SHARED)
 
 target_include_directories(ExecutorLib PUBLIC include/)
