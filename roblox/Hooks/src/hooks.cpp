@@ -7,12 +7,6 @@
 #include <executor.h>
 #include <addresses.h>
 
-#define DbHk(addr, hk, og) DobbyHook( \
-	reinterpret_cast<void*>(addr), \
-	reinterpret_cast<void*>(&hk), \
-	reinterpret_cast<void**>(&og) \
-);
-
 using namespace roblox;
 
 typedef uintptr_t mem_addr;
@@ -100,9 +94,9 @@ auto hooks::init() -> void {
 	const mem_addr jobStart = utils::memory::getAddress(addresses::functions::hooks::jobstart);
 	const mem_addr onGameLeave = utils::memory::getAddress(addresses::functions::hooks::ongameleave);
 	const mem_addr RobloxContextSystem_CapabilityErr = utils::memory::getAddress(addresses::functions::hooks::robloxcontextsystem_capabilityerr);
-
-	DbHk(jobStart, jobStop_hk, jobStart_og);
-	DbHk(onGameLeave, onGameLeave_hk, onGameLeave_og);
-	DbHk(RobloxContextSystem_CapabilityErr, RobloxContextSystem_CapabilityErr_hk, RobloxContextSystem_CapabilityErr_og);
+	
+	DobbyHook(reinterpret_cast<void*>(jobStart), reinterpret_cast<void*>(jobStop_hk), reinterpret_cast<void**>(jobStart_og));
+	DobbyHook(reinterpret_cast<void*>(onGameLeave), reinterpret_cast<void*>(onGameLeave_hk), reinterpret_cast<void**>(onGameLeave_og));
+	DobbyHook(reinterpret_cast<void*>(RobloxContextSystem_CapabilityErr), reinterpret_cast<void*>(RobloxContextSystem_CapabilityErr_hk), reinterpret_cast<void**>(RobloxContextSystem_CapabilityErr_og));
 }
 
