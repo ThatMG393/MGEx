@@ -7,8 +7,6 @@
 #include <executor.h>
 #include <addresses.h>
 
-using namespace roblox;
-
 typedef uintptr_t mem_addr;
 
 static std::unordered_set<mem_addr> startedJobs;
@@ -61,7 +59,7 @@ static mem_addr jobStop_hk(mem_addr job) {
 	if (!(*(uint8_t*)(job + 120) << 31)) job_name = (const char*)(job + 121);
 
 	if (memcmp(job_name, "WaitingHybridScriptsJob", 23) == 0) {
-		executor::stop();
+		roblox::executor::stop();
 	}
 
 	return orig(job);
@@ -90,10 +88,10 @@ static int MemAdviceInit_hk(JNIEnv* env, jobject gContext) {
 	return orig(env, gContext);
 }
 
-auto hooks::init() -> void {
-	const mem_addr jobStart = utils::memory::getAddress(addresses::functions::hooks::jobstart);
-	const mem_addr onGameLeave = utils::memory::getAddress(addresses::functions::hooks::ongameleave);
-	const mem_addr RobloxContextSystem_CapabilityErr = utils::memory::getAddress(addresses::functions::hooks::robloxcontextsystem_capabilityerr);
+auto roblox::hooks::init() -> void {
+	const mem_addr jobStart = utils::memory::getAddress(roblox::addresses::functions::hooks::jobstart);
+	const mem_addr onGameLeave = utils::memory::getAddress(roblox::addresses::functions::hooks::ongameleave);
+	const mem_addr RobloxContextSystem_CapabilityErr = utils::memory::getAddress(roblox::addresses::functions::hooks::robloxcontextsystem_capabilityerr);
 	
 	DobbyHook(reinterpret_cast<void*>(jobStart), reinterpret_cast<void*>(jobStop_hk), reinterpret_cast<void**>(jobStart_og));
 	DobbyHook(reinterpret_cast<void*>(onGameLeave), reinterpret_cast<void*>(onGameLeave_hk), reinterpret_cast<void**>(onGameLeave_og));
