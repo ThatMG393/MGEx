@@ -9,6 +9,13 @@ add_library(RobloxLib.Addresses SHARED)
 add_library(RobloxLib.Hooks SHARED)
 add_library(RobloxLib.TaskScheduler SHARED)
 
+
+# if(NOT CMAKE_HOST_SYSTEM_NAME STREQUAL "Android")
+# 	target_link_libraries(UtilsLib PUBLIC ${log-lib})
+# 	find_library(log-lib log)
+# endif()
+
+
 target_include_directories(RobloxLib.Addresses PUBLIC Addresses/include)
 target_link_libraries(RobloxLib.Addresses PUBLIC Luau.VM Luau.VM.Internals UtilsLib)
 file(GLOB ADDR_SRC "Addresses/include/*.h" "Addresses/src/*.cpp")
@@ -23,4 +30,5 @@ target_include_directories(RobloxLib.TaskScheduler PUBLIC TaskScheduler/include)
 target_link_libraries(RobloxLib.TaskScheduler PUBLIC Luau.VM RobloxLib.Addresses UtilsLib)
 file(GLOB TS_SRC "TaskScheduler/include/*.h" "TaskScheduler/src/*.cpp")
 target_sources(RobloxLib.TaskScheduler PRIVATE ${TS_SRC})
+
 
