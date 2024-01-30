@@ -3,7 +3,7 @@
 #include <jni.h>
 #include <unordered_set>
 #include <utils.h>
-#include <dobby.h>
+#include <Dobby/dobby.h>
 #include <executor.h>
 #include <addresses.h>
 

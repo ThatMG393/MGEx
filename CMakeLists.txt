@@ -5,6 +5,7 @@ project("MGex")
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 add_subdirectory(deps/luau)
+add_subdirectory(deps/Dobby)
 add_subdirectory(roblox)
 add_subdirectory(executor)
 add_subdirectory(utils)
@@ -15,7 +16,6 @@ set_target_properties(RobloxLib.Addresses PROPERTIES POSITION_INDEPENDENT_CODE O
 set_target_properties(RobloxLib.Hooks PROPERTIES POSITION_INDEPENDENT_CODE ON)
 set_target_properties(RobloxLib.TaskScheduler PROPERTIES POSITION_INDEPENDENT_CODE ON)
 set_target_properties(UtilsLib PROPERTIES POSITION_INDEPENDENT_CODE ON)
-set_target_properties(UtilsLib.Dobby PROPERTIES POSITION_INDEPENDENT_CODE ON)
 set_target_properties(ExecutorLib PROPERTIES POSITION_INDEPENDENT_CODE ON)
 set_target_properties(ExecutorLib.Execution PROPERTIES POSITION_INDEPENDENT_CODE ON)
 set_target_properties(Luau.VM PROPERTIES POSITION_INDEPENDENT_CODE ON)
@@ -25,21 +25,20 @@ set_target_properties(Luau.Ast PROPERTIES POSITION_INDEPENDENT_CODE ON)
 
 if(NOT CMAKE_HOST_SYSTEM_NAME STREQUAL "Android")
 	find_package(JNI REQUIRED)
-	find_library(log-lib log)
-	target_link_libraries(MGEx ${log-lib})
 endif()
 
 target_link_libraries(MGEx
 	RobloxLib.Addresses
+	Dobby
 	RobloxLib.Hooks
 	RobloxLib.TaskScheduler
 	ExecutorLib
 	ExecutorLib.Execution
 	UtilsLib
-	UtilsLib.Dobby
 	Luau.VM
 	Luau.VM.Internals
 	Luau.Common
 	Luau.Compiler
 	Luau.Ast
+	log
 )
