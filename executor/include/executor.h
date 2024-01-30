@@ -66,6 +66,6 @@ namespace roblox::executor {
 		const std::string exploit_name = "MGEx";
 		const std::string exploit_luaChunk = "@MB";
 		const std::string exploit_version = "0.0.1";
-		const std::string roblox_exploit_version = "2.603.563"; 	
+		const std::string roblox_exploit_version = "2.605.660"; 	
 	}
 }

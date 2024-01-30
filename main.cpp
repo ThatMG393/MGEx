@@ -17,8 +17,11 @@ JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM* jvm, void* reserved) {
 	LOGI("Getting JNIEnv (Java Native Interface Environment)...");
 	if (jvm->GetEnv(reinterpret_cast<void**>(&utils::Android::ApplicationEnv), JNI_VERSION_1_6) != JNI_OK) {
 		LOGE("Failed to get JNIEnv!");
+		exit(11);
 		return -1;
 	}
+
+	utils::Android::showToast("MGEx loading...", 0);
 
 	LOGI("Registering signal handler...");
 	signal(SIGSEGV, signal_handler);
@@ -34,6 +37,7 @@ JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM* jvm, void* reserved) {
 	roblox::hooks::init();
 
 	LOGI("Executor initiated!");
+	utils::Android::showToast("MGEx loaded 😈", 0);
 	return JNI_VERSION_1_6;
 }
 

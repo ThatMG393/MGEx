@@ -122,6 +122,16 @@ namespace utils {
 
 			return ApplicationEnv->CallObjectMethod(ActivityThread, GetApplication);
 		}
+
+		static void showToast(const char* message, const int length) {
+			jclass Toast = ApplicationEnv->FindClass("android/widget/Toast");
+			jmethodID MakeText = ApplicationEnv->GetStaticMethodID(Toast, OBFUSCATE("makeText"), "(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;");
+
+			jobject CreatedToast = ApplicationEnv->CallStaticObjectMethod(Toast, MakeText, getApplicationContext(), message, length);
+
+			jmethodID Show = ApplicationEnv->GetMethodID(Toast, OBFUSCATE("show"), "()V;");
+			ApplicationEnv->CallObjectMethod(CreatedToast, Show);
+		}
 	}
 
 	static jboolean isGameLibLoaded(JNIEnv *env, jobject thiz) {
