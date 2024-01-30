@@ -26,6 +26,7 @@ set_target_properties(Luau.Ast PROPERTIES POSITION_INDEPENDENT_CODE ON)
 if(NOT CMAKE_HOST_SYSTEM_NAME STREQUAL "Android")
 	find_package(JNI REQUIRED)
 	find_library(log-lib log)
+	target_link_libraries(MGEx ${log-lib})
 endif()
 
 target_link_libraries(MGEx
@@ -41,5 +42,4 @@ target_link_libraries(MGEx
 	Luau.Common
 	Luau.Compiler
 	Luau.Ast
-	${log-lib}
 )
