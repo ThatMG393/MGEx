@@ -3,7 +3,7 @@ Open-source Roblox Executor
 
 NOTE: STILL NOT WORKING BUT OPEN FOR MODIFICATION AND PULL REQUESTS
 
-Modification of [rscwn/MobileBloxV2](https://github.com/ironleon888/MobileBloxV2)
+Heavy modification of [rscwn/MobileBloxV2](https://github.com/ironleon888/MobileBloxV2)
 
 # Building
 
