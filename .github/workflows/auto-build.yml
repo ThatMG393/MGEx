@@ -36,7 +36,7 @@ jobs:
           cmake-version: 3.22.1
           ndk-version: 26.1.10909125
       
-      - name: Build MGEx
+      - name: Build MGEx for ${{matrix.target_arch}}
         run: |
           export NDK_HOME=$ANDROID_SDK_ROOT/ndk/26.1.10909125
 
@@ -47,7 +47,7 @@ jobs:
       - name: Upload libMGEx.so
         uses: actions/upload-artifact@v3
         with:
-          name: libMGEx-lib
+          name: libMGEx-${{matrix.target_arch}}-lib
           path: b/libMGEx.so
 
 
