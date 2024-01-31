@@ -1,12 +1,11 @@
 #pragma once
 
 #include <cstdint>
-#include <iomanip>
+#include <cstring>
 #include <jni.h>
 #include "obfuscate.h"
-#include <sstream>
 #include <thread>
-#include <unwind.h>
+#include <execinfo.h>
 #include <dlfcn.h>
 #include "log.h"
 
@@ -66,47 +65,20 @@ namespace utils {
 		}
 	}
 	
-	namespace backtrace {
-		struct state {
-			void** current;
-			void** end;
-		};
+	namespace stacktrace {
+		static void print(int signal, int maxFrames, siginfo_t* info) {
+			void* backtraceArray[maxFrames];
+			int frames = backtrace(backtraceArray, maxFrames);	
 
-		static _Unwind_Reason_Code unwind_callback(struct _Unwind_Context* context, void* arg) {
-			state* st = static_cast< state* >(arg);
-			uintptr_t pc = _Unwind_GetIP(context);
+			char** actualFrames = backtrace_symbols(backtraceArray, frames);
+			LOGE("App crashed with signal %d (means %s) at address %p)", 
+				signal, strsignal(signal), info->si_addr);
 
-			if (pc) {
-				const void* addr = reinterpret_cast<void*>(pc);
-				const char* symbol = "";
-
-				Dl_info info;
-				if (dladdr(addr, &info) && info.dli_sname) symbol = info.dli_sname;
-
-				std::ostringstream os;
-				os << OBFUSCATE("  #")
-				   << std::setw(2)
-				   << st->end - st->current
-				   << OBFUSCATE(": ") << addr
-				   << OBFUSCATE(" (")
-				   << reinterpret_cast< void* >(
-						reinterpret_cast< std::uintptr_t >(
-							addr
-						) - memory::getAddress(0)
-					) << OBFUSCATE(") ") << symbol << OBFUSCATE("\n");
-				LOGE("%s", os.str().c_str());
-
-				if (st->current == st->end) return _URC_NORMAL_STOP;
-				else *st->current++ = reinterpret_cast< void* >(pc);
+			for (int i = 1; i < frames && actualFrames != NULL; ++i) {
+				LOGE("[Backtrace #%d]: %s", i, actualFrames[i]);
 			}
 
-			return _URC_NO_REASON;
-		}
-
-		static void logcat(size_t max) {
-			char* buffer = new char[max];
-			state s = { reinterpret_cast< void** >( &buffer ), reinterpret_cast< void** >( &buffer ) + max };
-			_Unwind_Backtrace(unwind_callback, &s);
+			free(actualFrames);
 		}
 	}
 

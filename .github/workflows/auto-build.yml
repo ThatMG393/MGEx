@@ -38,12 +38,6 @@ jobs:
           sdk-version: 34
           cmake-version: 3.22.1
           ndk-version: 26.1.10909125
-
-      - name: Install required libraries
-        run: |
-          sudo apt update
-          sudo apt install \
-            libunwind-dev -y
       
       - name: Build MGEx for ${{matrix.target_arch}}
         run: |
