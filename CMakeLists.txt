@@ -25,6 +25,11 @@ set_target_properties(Luau.Ast PROPERTIES POSITION_INDEPENDENT_CODE ON)
 
 if(NOT CMAKE_HOST_SYSTEM_NAME STREQUAL "Android")
 	find_package(JNI REQUIRED)
+	find_library(unwind REQUIRED)
+	find_library(android REQUIRED)
+	find_library(m REQUIRED)
+
+	target_link_libraries(MGEx unwind android m)
 endif()
 
 target_link_libraries(MGEx

@@ -47,7 +47,7 @@ namespace roblox {
 			constexpr mem_addr firetouchinterest = CreateMemAddrForRbx(0x2F44E84);
 		}
 
-		auto rbxLuaEnc(mem_addr sc) -> uintptr_t;
+		auto rbxGetLuaState(mem_addr sc) -> uintptr_t;
 	}
 
 	namespace functions {
@@ -70,7 +70,7 @@ namespace roblox {
 	namespace structs {
 		struct live_thread_ref {
 			int unk_0;
-			lua_State* th;
+			lua_State* thread;
 			int thread_id;
 		};
 

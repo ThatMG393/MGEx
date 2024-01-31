@@ -24,7 +24,7 @@ int get_context_level_permissions(int identity) {
 }
 
 
-auto roblox::addresses::rbxLuaEnc(mem_addr sc) -> mem_addr {
+auto roblox::addresses::rbxGetLuaState(mem_addr sc) -> mem_addr {
 	return *(mem_addr*)(sc + 276) + (sc + 276);
 }
 
