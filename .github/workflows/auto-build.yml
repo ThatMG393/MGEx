@@ -43,7 +43,7 @@ jobs:
         run: |
           sudo apt update
           sudo apt install \
-            libunwind -y
+            libunwind-dev -y
       
       - name: Build MGEx for ${{matrix.target_arch}}
         run: |
