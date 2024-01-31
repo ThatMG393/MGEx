@@ -41,6 +41,7 @@ jobs:
 
       - name: Install required libraries
         run: |
+          sudo apt update
           sudo apt install \
             libunwind -y
       
