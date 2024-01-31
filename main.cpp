@@ -6,8 +6,9 @@
 #include <executor.h>
 #include <hooks.h>
 
-void signal_handler(int signal, siginfo_t* info, void* context) {
-	utils::stacktrace::print(signal, 50, info);
+void signal_handler(int signal) {
+	utils::stacktrace::print();
+	roblox::executor::stop();
 	exit(signal);
 }
 
@@ -24,10 +25,7 @@ JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM* jvm, void* reserved) {
 	utils::Android::showToast("MGEx loading...", 0);
 
 	LOGI("Registering 'SIGSEGV' signal handler...");
-	struct sigaction sa;
-	sa.sa_flags = SA_SIGINFO;
-	sa.sa_sigaction = signal_handler;
-	sigaction(SIGSEGV, &sa, nullptr);
+	signal(SIGSEGV, signal_handler);
 
 	LOGI("Now waiting for 'libroblox.so'");
 	utils::memory::waitForLib(OBFUSCATE("libroblox.so"));

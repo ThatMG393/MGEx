@@ -1,11 +1,15 @@
 #pragma once
 
+#include <cstddef>
 #include <cstdint>
 #include <cstring>
+#include <iomanip>
 #include <jni.h>
 #include "obfuscate.h"
+#include <ostream>
+#include <sstream>
 #include <thread>
-#include <execinfo.h>
+#include <unwind.h>
 #include <dlfcn.h>
 #include "log.h"
 
@@ -66,19 +70,49 @@ namespace utils {
 	}
 	
 	namespace stacktrace {
-		static void print(int signal, int maxFrames, siginfo_t* info) {
-			void* backtraceArray[maxFrames];
-			int frames = backtrace(backtraceArray, maxFrames);	
+		struct BacktraceState {
+			void** current;
+			void** end;
+		};
 
-			char** actualFrames = backtrace_symbols(backtraceArray, frames);
-			LOGE("App crashed with signal %d (means %s) at address %p)", 
-				signal, strsignal(signal), info->si_addr);
+		static _Unwind_Reason_Code unwindCallback(struct _Unwind_Context* context, void* arg) {
+			BacktraceState* state = static_cast<BacktraceState*>(arg);
+			uintptr_t pc = _Unwind_GetIP(context);
+			if (pc) {
+				const void* addr = reinterpret_cast<void*>(pc);
+				const char* symbol = "";
 
-			for (int i = 1; i < frames && actualFrames != NULL; ++i) {
-				LOGE("[Backtrace #%d]: %s", i, actualFrames[i]);
+				std::ostringstream os;
+				os << 
+					"  #" << 
+					std::setw( 2 ) << 
+					state->end - state->current << 
+					": " << addr << " (" <<
+					reinterpret_cast<void*>(
+						reinterpret_cast<DWORD>(addr) - memory::getAddress(0)
+					) << ") " << symbol << "\n";
+
+				LOGE("%s", os.str().c_str());
+
+				if (state->current == state->end) {
+					return _URC_NORMAL_STOP;
+				} else {
+					*state->current++ = reinterpret_cast<void*>(pc);
+				}
 			}
+			return _URC_NO_REASON;
+		}
 
-			free(actualFrames);
+		static void print() {
+			size_t max = 69;
+			char* buffer = new char[max];
+
+			BacktraceState s = {
+				reinterpret_cast<void**>(&buffer),
+				reinterpret_cast<void**>(&buffer) + max
+			};
+
+			_Unwind_Backtrace(unwindCallback, &s );
 		}
 	}
 
