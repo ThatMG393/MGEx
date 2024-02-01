@@ -55,7 +55,6 @@ jobs:
 
       - name: Print library info
         run: |
-          cd b
-
-          ldd libMGEx.so
-          nm -aCu libMGEx.so
+          ls b
+          ldd b/libMGEx.so
+          nm -aCu b/libMGEx.so
