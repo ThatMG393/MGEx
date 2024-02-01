@@ -53,9 +53,7 @@ jobs:
           name: libMGEx-${{matrix.target_arch}}-lib
           path: b/libMGEx.so
 
-      - name: Print library info
+      - name: Print missing symbols
         run: |
           ls b
-          sudo apt update && sudo apt-get install gcc-multilib -y
-          ldd b/libMGEx.so
           nm -aCu b/libMGEx.so
