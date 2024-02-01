@@ -6,10 +6,8 @@ NOTE: STILL NOT TESTED BUT OPEN FOR MODIFICATION AND PULL REQUESTS
 Heavy modification of [rscwn/MobileBloxV2](https://github.com/ironleon888/MobileBloxV2)
 
 # Building
-
 ## Requires:
 - CMake (required)
-- Clang (or any c/cpp compiler, required)
 - NDK (required)
 
 ## Steps:
