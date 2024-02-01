@@ -1,17 +1,14 @@
 #pragma once
 
-#include <cstddef>
-#include <cstdint>
-#include <cstring>
-#include <iomanip>
-#include <jni.h>
 #include "obfuscate.h"
-#include <ostream>
+#include "log.h"
+#include <jni.h>
+#include <unwind.h>
+#include <iomanip>
 #include <sstream>
 #include <thread>
-#include <unwind.h>
-#include <dlfcn.h>
-#include "log.h"
+#include <cstdio>
+#include <cstdlib>
 
 typedef uintptr_t DWORD;
 
