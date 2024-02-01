@@ -42,6 +42,5 @@ target_link_libraries(MGEx
 	Luau.Ast
 	log
 	c
-	c++
 	m
 )
