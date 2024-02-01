@@ -30,12 +30,12 @@ auto taskscheduler::getJobs() -> std::vector<std::uintptr_t> {
 
 // testing purposes 
 auto taskscheduler::logJobs() -> void {
-    auto job_list = getJobs();
+    auto job_list = taskscheduler::getJobs();
     
     int i = 0;
     for (uintptr_t job : job_list) {
-        auto job_name = *reinterpret_cast<const char**>(job + 128);
-
+        const char* job_name = *reinterpret_cast<const char**>(job + 128);
+		
         if (!(*(uint8_t*)(job + 120) << 31)) {
             job_name = (const char*)(job + 121);
         }
@@ -51,7 +51,7 @@ auto taskscheduler::getJobByName(const std::string& name) -> uintptr_t {
     auto job_list = taskscheduler::getJobs();
     
     for (auto job : job_list) {
-        auto job_name = *reinterpret_cast<const char**>(job + 128);
+        const char* job_name = *reinterpret_cast<const char**>(job + 128);
 
         if ( !(*(std::uint8_t*)(job + 120) << 31) ) {
             job_name = (const char*)(job + 121);
@@ -69,7 +69,7 @@ auto taskscheduler::getJobByName(const std::string& name) -> uintptr_t {
 auto taskscheduler::hookToJob(uintptr_t job, void* dst) -> uintptr_t {
     memcpy(new_vftable, *reinterpret_cast<void**>(job), 4u * 7u);
 
-    auto old_vftable = *reinterpret_cast<uintptr_t**>(job);
+    uintptr_t* old_vftable = *reinterpret_cast<uintptr_t**>(job);
     new_vftable[6] = reinterpret_cast<uintptr_t>(dst);
 
     *reinterpret_cast<uintptr_t**>(job) = new_vftable;
@@ -78,7 +78,7 @@ auto taskscheduler::hookToJob(uintptr_t job, void* dst) -> uintptr_t {
 
 auto taskscheduler::findFPSCapOffset() -> uintptr_t {
     if (fpscap_offset != -1) return fpscap_offset;
-    auto TS = roblox::functions::get_taskscheduler();
+    uintptr_t TS = roblox::functions::get_taskscheduler();
 
 	for ( int i = 0; i < 123456; i += 4 ) {
 		auto val = *reinterpret_cast<double*>(TS + i);
@@ -89,22 +89,22 @@ auto taskscheduler::findFPSCapOffset() -> uintptr_t {
 		}
 	}
     
-    
     return fpscap_offset;
 }
 
 auto taskscheduler::setFPSCap(double cap) -> void {
-    static auto off = taskscheduler::findFPSCapOffset();
+    uintptr_t off = taskscheduler::findFPSCapOffset();
     
-    static const double min_frame_delay = 1.0 / 1000.0;
+	double min_frame_delay = 1.0 / 1000.0;
     double frame_delay = cap <= 0.0 ? min_frame_delay : 1.0 / cap;
-    *reinterpret_cast<double*>(roblox::functions::get_taskscheduler() + off) = frame_delay;
+    
+	*reinterpret_cast<double*>(roblox::functions::get_taskscheduler() + off) = frame_delay;
 }
 
 auto taskscheduler::getFPSCap() -> double {
-    static auto off = taskscheduler::findFPSCapOffset();
+    uintptr_t off = taskscheduler::findFPSCapOffset();
     
-    auto cap = *reinterpret_cast<double*>(roblox::functions::get_taskscheduler() + off);
+    double cap = *reinterpret_cast<double*>(roblox::functions::get_taskscheduler() + off);
     return 1.0 / cap;
 }
 
