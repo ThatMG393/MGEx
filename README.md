@@ -1,7 +1,7 @@
 # MGEx
 Open-source Roblox Executor
 
-NOTE: STILL NOT WORKING BUT OPEN FOR MODIFICATION AND PULL REQUESTS
+NOTE: STILL NOT TESTED BUT OPEN FOR MODIFICATION AND PULL REQUESTS
 
 Heavy modification of [rscwn/MobileBloxV2](https://github.com/ironleon888/MobileBloxV2)
 
