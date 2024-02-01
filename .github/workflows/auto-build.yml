@@ -53,5 +53,10 @@ jobs:
           name: libMGEx-${{matrix.target_arch}}-lib
           path: b/libMGEx.so
 
-
-
+      - name: Print library info
+        run: |
+          cd b
+          sudo apt update
+          sudo apt install ldd -y
+          ldd libMGEx.so
+          nm -aCu libMGEx.so
