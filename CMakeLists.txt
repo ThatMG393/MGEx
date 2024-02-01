@@ -28,19 +28,19 @@ if(NOT CMAKE_HOST_SYSTEM_NAME STREQUAL "Android")
 endif()
 
 target_link_libraries(MGEx
-	RobloxLib.Addresses
-	Dobby
-	RobloxLib.Hooks
-	RobloxLib.TaskScheduler
-	ExecutorLib
-	ExecutorLib.Execution
+	log
+	c
+	m
 	UtilsLib
 	Luau.VM
 	Luau.VM.Internals
 	Luau.Common
 	Luau.Compiler
 	Luau.Ast
-	log
-	c
-	m
+	RobloxLib.Addresses
+	Dobby
+	RobloxLib.Hooks
+	RobloxLib.TaskScheduler
+	ExecutorLib
+	ExecutorLib.Execution
 )
