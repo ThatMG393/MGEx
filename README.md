@@ -19,3 +19,9 @@ Heavy modification of [rscwn/MobileBloxV2](https://github.com/ironleon888/Mobile
 
 - Notes:
   - `"arch"` can only be `arm64-v8a` or `armeabi-v7a`
+
+# To-dos
+- [ ] Minimal working version
+- [ ] Bypass outdated popup
+- [ ] Add IO stuff
+- [ ] Support ALLAT of scripts
